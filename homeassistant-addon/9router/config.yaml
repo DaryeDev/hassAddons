@@ -1,5 +1,5 @@
 name: "9Router"
-version: "1.0.5"
+version: "1.0.6"
 slug: "9router"
 description: "AI model router - endpoint OpenAI-compatible para 60+ proveedores"
 url: "https://9router.com"
@@ -27,4 +27,3 @@ environment:
   HOSTNAME: "0.0.0.0"
   NODE_ENV: "production"
   JWT_SECRET: "changeme-bbb1-48bf-87f4-689c804a800b"
-  INITIAL_PASSWORD: "changeme-c8b1-4fb9-b34d-006c3b72a877"

@@ -1,7 +1,8 @@
 #!/bin/sh
 set -e
 
-chown -R node:node /app/data /app/data-home 2>/dev/null || true
+mkdir -p /data/db /data/db/backups
+chown -R node:node /data /app/data /app/data-home 2>/dev/null || true
 
 su-exec node node custom-server.js &
 ROUTER_PID=$!

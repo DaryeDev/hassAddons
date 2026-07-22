@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.6
+
+- Fix login EACCES: chown /data for node user and stop rewriting API JSON responses
+
 ## 1.0.5
 
 - Fix Ingress assets 404: disable upstream gzip so nginx can rewrite Next.js paths
