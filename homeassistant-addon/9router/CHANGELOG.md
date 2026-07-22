@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.5
+
+- Fix Ingress assets 404: disable upstream gzip so nginx can rewrite Next.js paths
+
 ## 1.0.4
 
 - Fix Ingress panel: add nginx proxy with URL rewriting for Next.js dashboard
