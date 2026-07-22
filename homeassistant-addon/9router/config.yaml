@@ -1,5 +1,5 @@
 name: "9Router"
-version: "1.0.3"
+version: "1.0.4"
 slug: "9router"
 description: "AI model router - endpoint OpenAI-compatible para 60+ proveedores"
 url: "https://9router.com"
@@ -16,7 +16,8 @@ ports_description:
   20128/tcp: "Endpoint OpenAI-compatible + dashboard"
 webui: "http://[HOST]:[PORT:20128]/"
 ingress: true
-ingress_port: 20128
+ingress_port: 8099
+ingress_stream: true
 panel_icon: mdi:router-wireless
 panel_title: "9Router"
 panel_admin: true
