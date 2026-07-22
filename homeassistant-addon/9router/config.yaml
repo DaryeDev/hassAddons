@@ -1,7 +1,7 @@
 name: "9Router"
-version: "1.0.0"
+version: "1.0.1"
 slug: "9router"
-description: "9Router - Free AI Router"
+description: "AI model router - endpoint OpenAI-compatible para 60+ proveedores"
 url: "https://9router.com"
 arch:
   - amd64
@@ -14,7 +14,10 @@ ports:
   20128/tcp: 20128
 ports_description:
   20128/tcp: "Endpoint OpenAI-compatible + dashboard"
-map:
-  - addon_config:rw
 environment:
-  HOME: "/config"
+  DATA_DIR: "/data"
+  PORT: "20128"
+  HOSTNAME: "0.0.0.0"
+  NODE_ENV: "production"
+  JWT_SECRET: "changeme-bbb1-48bf-87f4-689c804a800b"
+  INITIAL_PASSWORD: "changeme-c8b1-4fb9-b34d-006c3b72a877"

@@ -1,10 +1,3 @@
-FROM node:20-alpine
-
-RUN npm install -g 9router
-
-RUN mkdir -p /config
-ENV HOME=/config
+FROM decolua/9router:latest
 
 EXPOSE 20128
-
-CMD ["9router"]
