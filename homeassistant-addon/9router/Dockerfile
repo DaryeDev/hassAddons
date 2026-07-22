@@ -8,6 +8,7 @@ RUN apk add --no-cache nginx netcat-openbsd && \
 
 COPY rootfs/etc/nginx/nginx.conf /etc/nginx/nginx.conf
 COPY rootfs/etc/nginx/http.d/ingress.conf /etc/nginx/http.d/ingress.conf
+COPY rootfs/etc/nginx/ingress-bootstrap.js /etc/nginx/ingress-bootstrap.js
 COPY run.sh /run.sh
 RUN chmod +x /run.sh
 

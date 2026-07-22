@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.0.8
+
+- Fix navigation 404: intercept pushState/assign/clicks so /dashboard/* stays under Ingress path
+
+## 1.0.7
+
+- Fix Ingress navigation 404: patch Next.js client routing (history/fetch) for subpath
+
 ## 1.0.6
 
 - Fix login EACCES: chown /data for node user and stop rewriting API JSON responses
