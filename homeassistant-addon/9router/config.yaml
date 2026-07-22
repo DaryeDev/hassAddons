@@ -1,5 +1,5 @@
 name: "9Router"
-version: "1.0.2"
+version: "1.0.3"
 slug: "9router"
 description: "AI model router - endpoint OpenAI-compatible para 60+ proveedores"
 url: "https://9router.com"
